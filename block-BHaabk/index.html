@@ -1,13 +1,79 @@
-<!-- 
-1. Create a simple page having a header, main content, and a footer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-block1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex clearfix">
+            <a href="#" class="brand">
+                <img src="https://launchpad.altcampus.school/images/altcampus-logo.svg" alt="altcampus-logo">
+            </a>
 
-2. Inside the header keep the brand name to the left and all the navigation to the right.
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">Signin</a>
+            </nav>
+        </div>
+    </header>
 
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+    <main>
+        <article class="article">
+            <div class="container flex">
+                <div class="col left">
+                    <h1 class="article-heading">This is article heading</h1>
+                    <p class="article-text">Once you have input all of your specifications, all you have to do is to press the Generate Random Words button, and a list of random words will appear. Below are some of the common ways people use this tool. Once you have input all of your specifications, all you have to do is to press the Generate Random Words button, and a list of random words will appear. Below are some of the common ways people use this tool. Once you have input all of your specifications, all you have to do is to press the Generate Random Words button, and a list of random words will appear. Below are some of the common ways people use this tool.</p>
 
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+                </div>
 
-6. After the gallery section footer will come.
+                <div class="col">
+                    <img src="https://images.unsplash.com/photo-1520315342629-6ea920342047?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80" alt="cat">
+                </div>
+            </div>
+        </article>
 
-7. Use flexbox properties and values to create columns.
- -->
+        <section class="gallery">
+            <div class="container flex wrap ">
+                <div class="col-1-3">
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" alt="cats">
+                </div>
+                <div class="col-1-3">
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" alt="cats">
+                </div>
+                <div class="col-1-3">
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" alt="cats">
+                </div>
+                <div class="col-1-3">
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" alt="cats">
+                </div>
+                <div class="col-1-3">
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" alt="cats">
+                </div>
+                <div class="col-1-3">
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" alt="cats">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="container">
+
+            <nav>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </nav>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
